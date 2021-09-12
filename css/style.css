@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px 40px;
+  font-family: futura;
+  background: rgb(11, 91, 133);
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 20px;
+  text-transform: none;
+  font-weight: normal;
+}
+
+/* INDEX */
+.index {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.index h1 {
+  color: white;
+}
+
+.results-contributedby {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.results {
+  display: block;
+  flex-wrap: wrap;
+}
+
+.results > a {
+  padding: 1rem;
+  border: 1px solid black;
+  margin: 1rem;
+  background: white;
+  text-decoration: none;
+  color: black;
+}
+
+.results img {
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+}
+
+.results-tagline {
+  font-style: italic;
+}
+
+.results-name {
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.home-button {
+  background: black;
+  width: 140px;
+  margin: 0 auto 30px;
+}
+
+.contact-button {
+  width: 140px;
+  background: black;
+  margin: 0 auto 0 15px;
+}
+
+/* DETAILS */
+.product-details {
+  width: 100%;
+  max-width: 1000px;
+  margin: 40px auto 0 auto;
+  background: white;
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+.product-details img {
+  display: block;
+  margin: 0 auto 50px;
+  width: 15%;
+}
+
+.product-details p,
+.product-details h3 {
+  text-align: left;
+  color: black;
+}
+
+.details-date {
+  font-size: 18px;
+  margin-bottom: 1em;
+  font-style: italic;
+  font-weight: bold;
+  display: block;
+  text-align: left;
+  text-transform: none;
+}
+
+.contributed-by p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.details-tagline {
+  font-style: italic;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* CONTACT */
+.contact-container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+form {
+  padding: 2em;
+  background: white;
+  border-radius: 0;
+  border: 1px black;
+}
+
+input {
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  background: rgb(11, 91, 133);
+  border: none;
+  width: 200px;
+  padding: 1rem;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+button:disabled {
+  background: lightgray;
+}
+
+.message {
+  background: green;
+  padding: 1rem;
+  color: white;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* button:hover {
+  background: white;
+  color: black;
+  border: 1px solid black;
+  transition: 1s;
+} */
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+.contact-h1 {
+  color: black;
+}
+
+/* ERROR */
+.error {
+  border: 1px solid darkred;
+  padding: 1rem;
+  color: darkred;
+  background: white;
+}
+
+/* LOADER */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid darkred;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
